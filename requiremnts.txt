@@ -1,0 +1,3 @@
+requests
+dbt-core
+dbt-clickhouse

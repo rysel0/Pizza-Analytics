@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+clickhouse_data/
+aryas_dbt/target/
+aryas_dbt/dbt_packages/
+aryas_dbt/logs/
+aryas_dbt/profiles.yml
+.DS_Store

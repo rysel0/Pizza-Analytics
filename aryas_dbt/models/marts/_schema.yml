@@ -1,0 +1,13 @@
+version: 2
+ 
+models:
+  - name: mart_menu_performance
+    description: "KPI по каждому блюду меню: продажи, выручка, прибыль"
+    columns:
+      - name: dish_id
+        tests: [not_null, unique]
+      - name: total_revenue
+        description: "Общая выручка за период"
+ 
+  - name: mart_orders_by_hour
+    description: "Загрузка пиццерии по часам и дням недели"

@@ -1,0 +1,19 @@
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:26.3
+    container_name: aryas_clickhouse
+    ports:
+      - "8123:8123"   # HTTP
+      - "9000:9000"   # Native TCP
+    volumes:
+      - ./clickhouse_data:/var/lib/clickhouse
+      - ./data:/data
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    environment:
+      CLICKHOUSE_DB: aryas_pizza
+      CLICKHOUSE_USER: analyst
+      CLICKHOUSE_PASSWORD: analyst123
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1

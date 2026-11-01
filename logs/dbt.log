@@ -1,0 +1,228 @@
+[0m15:09:01.618603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762f0f1a2ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762f0fc83920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762f0f325f70>]}
+
+
+============================== 15:09:01.623764 | 18a85ba4-f030-46a8-a6f4-bca0ed97f90c ==============================
+[0m15:09:01.623764 [info ] [MainThread]: Running with dbt=1.12.6
+[0m15:09:01.624362 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/rysel0/.dbt', 'maximum_seed_size_mib': '1', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'static_parser': 'True', 'empty': 'None', 'log_format': 'default', 'log_path': 'logs', 'invocation_command': 'dbt init aryas_dbt', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None', 'partial_parse': 'True', 'fail_fast': 'False', 'write_json': 'True', 'quiet': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'target_path': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'hints_enabled': 'True'}
+[0m15:09:01.645844 [info ] [MainThread]: Creating dbt configuration folder at /home/rysel0/.dbt
+[0m15:09:01.647408 [debug] [MainThread]: Starter project path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:09:01.651177 [info ] [MainThread]: Setting up your profile.
+[0m15:09:09.309780 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m15:09:09.311384 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:09:09.312307 [info ] [MainThread]: dbt version: 1.12.6
+[0m15:09:09.312970 [info ] [MainThread]: python version: 3.12.3
+[0m15:09:09.313583 [info ] [MainThread]: python path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/bin/python3
+[0m15:09:09.314047 [info ] [MainThread]: os info: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m15:09:09.314594 [info ] [MainThread]: Using profiles dir at /home/rysel0/.dbt
+[0m15:09:09.315045 [info ] [MainThread]: Using profiles.yml file at /home/rysel0/.dbt/profiles.yml
+[0m15:09:09.315372 [info ] [MainThread]: Using dbt_project.yml file at /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/aryas_dbt/dbt_project.yml
+[0m15:09:09.446455 [info ] [MainThread]: Configuration:
+[0m15:09:09.447019 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m15:09:09.447403 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:09:09.447765 [info ] [MainThread]: Required dependencies:
+[0m15:09:09.448110 [debug] [MainThread]: Executing "git --help"
+[0m15:09:09.452230 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:09:09.452764 [debug] [MainThread]: STDERR: "b''"
+[0m15:09:09.453105 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:09:09.453445 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:09:09.453771 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:09:09.454120 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/rysel0/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:09:09.454567 [info ] [MainThread]: Your new dbt project "aryas_dbt" was created!
+Initialized new project in /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/aryas_dbt/aryas_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:09:09.455065 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m15:09:09.457581 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 7.962102, "process_in_blocks": "0", "process_kernel_time": 0.484356, "process_mem_max_rss": "112216", "process_out_blocks": "0", "process_user_time": 1.611998}
+[0m15:09:09.458397 [debug] [MainThread]: Command `dbt init` succeeded at 15:09:09.458253 after 7.96 seconds
+[0m15:09:09.458873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762f13ccf530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762f10517830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762f0fc4c950>]}
+[0m15:09:09.459483 [debug] [MainThread]: Flushing usage events
+[0m15:09:10.518270 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:10:39.912787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ed6cf9be0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ed6ce685a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ed6ce273f50>]}
+
+
+============================== 15:10:39.916872 | 52ece50c-3730-47f2-8772-551346fc4c86 ==============================
+[0m15:10:39.916872 [info ] [MainThread]: Running with dbt=1.12.6
+[0m15:10:39.917766 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'write_json': 'True', 'profiles_dir': '/home/rysel0/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'invocation_command': 'dbt init aryas_dbt', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'introspect': 'True', 'quiet': 'False', 'no_print': 'None', 'empty': 'None', 'warn_error': 'None', 'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False'}
+[0m15:10:39.933735 [debug] [MainThread]: Starter project path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:10:39.940331 [info ] [MainThread]: Setting up your profile.
+[0m15:10:45.917691 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m15:10:45.919732 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:10:45.920440 [info ] [MainThread]: dbt version: 1.12.6
+[0m15:10:45.921075 [info ] [MainThread]: python version: 3.12.3
+[0m15:10:45.921657 [info ] [MainThread]: python path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/bin/python3
+[0m15:10:45.922047 [info ] [MainThread]: os info: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m15:10:45.922438 [info ] [MainThread]: Using profiles dir at /home/rysel0/.dbt
+[0m15:10:45.922991 [info ] [MainThread]: Using profiles.yml file at /home/rysel0/.dbt/profiles.yml
+[0m15:10:45.923699 [info ] [MainThread]: Using dbt_project.yml file at /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/aryas_dbt/dbt_project.yml
+[0m15:10:46.039554 [info ] [MainThread]: Configuration:
+[0m15:10:46.040144 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m15:10:46.040503 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:10:46.040850 [info ] [MainThread]: Required dependencies:
+[0m15:10:46.041210 [debug] [MainThread]: Executing "git --help"
+[0m15:10:46.043222 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:10:46.043752 [debug] [MainThread]: STDERR: "b''"
+[0m15:10:46.044073 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:10:46.044442 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:10:46.044792 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:10:46.045095 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/rysel0/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:10:46.045450 [info ] [MainThread]: Your new dbt project "aryas_dbt" was created!
+Initialized new project in /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/aryas_dbt/aryas_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:10:46.045778 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m15:10:46.046692 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 6.2502265, "process_in_blocks": "0", "process_kernel_time": 0.720698, "process_mem_max_rss": "111616", "process_out_blocks": "0", "process_user_time": 1.569689}
+[0m15:10:46.047331 [debug] [MainThread]: Command `dbt init` succeeded at 15:10:46.047210 after 6.25 seconds
+[0m15:10:46.047819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ed6ce29c440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ed6cd497860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ed6d0933680>]}
+[0m15:10:46.048296 [debug] [MainThread]: Flushing usage events
+[0m15:10:46.960581 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:05:24.034724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784d11837320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784d11837680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784d118373b0>]}
+
+
+============================== 16:05:24.039675 | dbfd26fc-52aa-4e1c-90f1-f939ff89723f ==============================
+[0m16:05:24.039675 [info ] [MainThread]: Running with dbt=1.7.0
+[0m16:05:24.040511 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'target_path': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'invocation_command': 'dbt init aryas_dbt', 'log_cache_events': 'False', 'write_json': 'True', 'profiles_dir': '/home/rysel0/.dbt', 'use_experimental_parser': 'False', 'no_print': 'None', 'use_colors': 'True', 'introspect': 'True', 'log_format': 'default', 'version_check': 'True', 'warn_error': 'None'}
+[0m16:05:24.041958 [debug] [MainThread]: Starter project path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m16:05:24.045959 [info ] [MainThread]: 
+Your new dbt project "aryas_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:05:24.046588 [info ] [MainThread]: Setting up your profile.
+[0m16:05:27.249863 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:05:27.252565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784d15ffeff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784d11784200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784d116a8bc0>]}
+[0m16:05:27.253048 [debug] [MainThread]: Flushing usage events
+[0m16:08:25.392353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1d21a9c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1e0b0fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1d2a9100>]}
+
+
+============================== 16:08:25.395228 | f27ee392-dbc0-4d27-8421-ad35f8150963 ==============================
+[0m16:08:25.395228 [info ] [MainThread]: Running with dbt=1.7.0
+[0m16:08:25.395768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/rysel0/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init aryas_dbt', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:08:25.396454 [debug] [MainThread]: Starter project path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m16:08:25.400504 [info ] [MainThread]: 
+Your new dbt project "aryas_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:08:25.400927 [info ] [MainThread]: Setting up your profile.
+[0m16:08:26.974859 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:08:26.978882 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 1.5880224, "process_user_time": 1.534198, "process_kernel_time": 0.106149, "process_mem_max_rss": "97008", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:08:26.979702 [debug] [MainThread]: Command `dbt init` succeeded at 16:08:26.979520 after 1.59 seconds
+[0m16:08:26.980105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1dbff7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f21409fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e5f1e0b0fe0>]}
+[0m16:08:26.980543 [debug] [MainThread]: Flushing usage events
+[0m16:11:23.058765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x716162a25e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71616453c5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7161620f1bb0>]}
+
+
+============================== 16:11:23.064984 | b155d88a-50bb-43bf-84fa-e4a67b9d9c09 ==============================
+[0m16:11:23.064984 [info ] [MainThread]: Running with dbt=1.12.6
+[0m16:11:23.065554 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'empty': 'None', 'profiles_dir': '/home/rysel0/.dbt', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'warn_error': 'None', 'introspect': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'use_colors': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init aryas_dbt', 'debug': 'False', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'no_print': 'None', 'log_format': 'default', 'hints_enabled': 'True'}
+[0m16:11:23.090312 [debug] [MainThread]: Starter project path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m16:11:23.096894 [info ] [MainThread]: Setting up your profile.
+[0m16:11:25.726201 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m16:11:25.727801 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:11:25.728358 [info ] [MainThread]: dbt version: 1.12.6
+[0m16:11:25.728706 [info ] [MainThread]: python version: 3.12.3
+[0m16:11:25.729025 [info ] [MainThread]: python path: /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/venv/bin/python3
+[0m16:11:25.729322 [info ] [MainThread]: os info: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m16:11:25.729624 [info ] [MainThread]: Using profiles dir at /home/rysel0/.dbt
+[0m16:11:25.729921 [info ] [MainThread]: Using profiles.yml file at /home/rysel0/.dbt/profiles.yml
+[0m16:11:25.730209 [info ] [MainThread]: Using dbt_project.yml file at /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/aryas_dbt/dbt_project.yml
+[0m16:11:25.842083 [info ] [MainThread]: Configuration:
+[0m16:11:25.842628 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m16:11:25.843027 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:11:25.843453 [info ] [MainThread]: Required dependencies:
+[0m16:11:25.843856 [debug] [MainThread]: Executing "git --help"
+[0m16:11:25.852567 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:11:25.853109 [debug] [MainThread]: STDERR: "b''"
+[0m16:11:25.853431 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:11:25.853883 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:11:25.854271 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:11:25.854613 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/rysel0/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:11:25.855171 [info ] [MainThread]: Your new dbt project "aryas_dbt" was created!
+Initialized new project in /home/rysel0/projects/datahuman-course/aryas-pizza-analytics/aryas_dbt/aryas_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:11:25.856375 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m16:11:25.859957 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 2.8801322, "process_in_blocks": "0", "process_kernel_time": 0.677755, "process_mem_max_rss": "111312", "process_out_blocks": "0", "process_user_time": 1.767555}
+[0m16:11:25.860611 [debug] [MainThread]: Command `dbt init` succeeded at 16:11:25.860477 after 2.88 seconds
+[0m16:11:25.861068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x716162a25e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x716161409190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7161614ed550>]}
+[0m16:11:25.861493 [debug] [MainThread]: Flushing usage events
+[0m16:11:26.918762 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,24 @@
+dish_id,dish_name,category,price,cost_price
+1,Margherita,Pizza,550,180
+2,Pepperoni,Pizza,650,220
+3,Quattro Formaggi,Pizza,750,290
+4,Hawaiian,Pizza,680,240
+5,Meat Lovers,Pizza,820,320
+6,Vegetariana,Pizza,620,210
+7,Caesar Salad,Salad,420,150
+8,Greek Salad,Salad,380,120
+9,Tuna Salad,Salad,460,180
+10,Carbonara,Pasta,480,170
+11,Bolognese,Pasta,460,160
+12,Seafood Pasta,Pasta,620,280
+13,Coca-Cola 0.5,Drinks,150,45
+14,Lemonade,Drinks,180,40
+15,Black Tea,Drinks,90,15
+16,Cappuccino,Drinks,220,55
+17,Tiramisu,Dessert,290,95
+18,Cheesecake,Dessert,320,110
+19,Panna Cotta,Dessert,270,85
+20,Minestrone Soup,Soup,350,120
+21,Mushroom Cream Soup,Soup,380,140
+22,Caviar Bruschetta,Appetizer,450,400
+23,Premium Antipasto,Appetizer,890,750
